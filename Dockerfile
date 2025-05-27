@@ -9,9 +9,9 @@ COPY . /app
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Set port and run gunicorn
-EXPOSE $PORT
-CMD ["gunicorn", "--workers=4", "--bind=0.0.0.0:$PORT", "app:app"]
+EXPOSE 10000
+
+CMD ["gunicorn", "--workers=4", "--bind=0.0.0.0:10000", "app:app"]
 
 # # Use official lightweight Python image
 # FROM python:3.9-slim
