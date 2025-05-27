@@ -11,3 +11,4 @@ opendatasets==0.1.22
 jupyter==1.0.0
 ipykernel==6.29.5
 Flask==3.0.3
+gunicorn==20.1.0

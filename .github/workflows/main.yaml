@@ -2,7 +2,8 @@ name: Deploy to Render
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # or your deploy branch
 
 jobs:
   deploy:
@@ -13,5 +14,4 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Trigger Render deploy hook
-      run: |
-        curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+      run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
