@@ -1,0 +1,13 @@
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.6.1
+matplotlib==3.9.4
+seaborn==0.13.2
+xgboost==2.1.4
+joblib==1.4.2
+openpyxl==3.1.5
+kaggle==1.7.4.2
+opendatasets==0.1.22
+jupyter==1.0.0
+ipykernel==6.29.5
+Flask==3.0.3
